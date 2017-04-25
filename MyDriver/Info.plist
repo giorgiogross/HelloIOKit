@@ -7,7 +7,7 @@
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
-	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<string>com.MyCompany.driver.${PRODUCT_NAME:rfc1034identifier}</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -19,7 +19,21 @@
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>IOKitPersonalities</key>
-	<dict/>
+	<dict>
+		<key>MyDriver</key>
+		<dict>
+			<key>IOMatchCathegory</key>
+			<string>com_MyCompany_driver_MyDriver</string>
+			<key>IOProviderClass</key>
+			<string>IOResources</string>
+			<key>IOKitDebug</key>
+			<integer>65535</integer>
+			<key>IOClass</key>
+			<string>com_MyCompany_driver_MyDriver</string>
+			<key>CFBundleIdentifier</key>
+			<string>com.MyCompany.driver.${PRODUCT_NAME:rfc1034identifier}</string>
+		</dict>
+	</dict>
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2017 Giorgio Gross. All rights reserved.</string>
 	<key>OSBundleLibraries</key>
