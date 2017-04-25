@@ -7,15 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		44C03FC01E9E476600D997F8 /* MyDriver.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 44C03FBF1E9E476600D997F8 /* MyDriver.hpp */; };
+		44C03FC01E9E476600D997F8 /* MyDriver.h in Headers */ = {isa = PBXBuildFile; fileRef = 44C03FBF1E9E476600D997F8 /* MyDriver.h */; };
 		44C03FC21E9E476600D997F8 /* MyDriver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 44C03FC11E9E476600D997F8 /* MyDriver.cpp */; };
+		44D498271EAF8747004E0DC3 /* Notes.txt in Resources */ = {isa = PBXBuildFile; fileRef = 44D498261EAF8747004E0DC3 /* Notes.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		44C03FBC1E9E476600D997F8 /* MyDriver.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyDriver.kext; sourceTree = BUILT_PRODUCTS_DIR; };
-		44C03FBF1E9E476600D997F8 /* MyDriver.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MyDriver.hpp; sourceTree = "<group>"; };
+		44C03FBF1E9E476600D997F8 /* MyDriver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyDriver.h; sourceTree = "<group>"; };
 		44C03FC11E9E476600D997F8 /* MyDriver.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MyDriver.cpp; sourceTree = "<group>"; };
 		44C03FC31E9E476600D997F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44D498261EAF8747004E0DC3 /* Notes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Notes.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,9 +50,10 @@
 		44C03FBE1E9E476600D997F8 /* MyDriver */ = {
 			isa = PBXGroup;
 			children = (
-				44C03FBF1E9E476600D997F8 /* MyDriver.hpp */,
+				44C03FBF1E9E476600D997F8 /* MyDriver.h */,
 				44C03FC11E9E476600D997F8 /* MyDriver.cpp */,
 				44C03FC31E9E476600D997F8 /* Info.plist */,
+				44D498261EAF8747004E0DC3 /* Notes.txt */,
 			);
 			path = MyDriver;
 			sourceTree = "<group>";
@@ -62,7 +65,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44C03FC01E9E476600D997F8 /* MyDriver.hpp in Headers */,
+				44C03FC01E9E476600D997F8 /* MyDriver.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,6 +127,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44D498271EAF8747004E0DC3 /* Notes.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,9 +240,9 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1.0.0d1;
 				INFOPLIST_FILE = MyDriver/Info.plist;
-				MODULE_NAME = "de.giorgio-gross.MyDriver";
+				MODULE_NAME = com.MyCompany.driver.MyDriver;
 				MODULE_VERSION = 1.0.0d1;
-				PRODUCT_BUNDLE_IDENTIFIER = "de.giorgio-gross.MyDriver";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MyCompany.driver.MyDriver;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = kext;
 			};
@@ -250,9 +254,9 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1.0.0d1;
 				INFOPLIST_FILE = MyDriver/Info.plist;
-				MODULE_NAME = "de.giorgio-gross.MyDriver";
+				MODULE_NAME = com.MyCompany.driver.MyDriver;
 				MODULE_VERSION = 1.0.0d1;
-				PRODUCT_BUNDLE_IDENTIFIER = "de.giorgio-gross.MyDriver";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MyCompany.driver.MyDriver;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = kext;
 			};
@@ -277,6 +281,7 @@
 				44C03FC81E9E476600D997F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

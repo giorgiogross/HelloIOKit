@@ -36,7 +36,12 @@
 	</dict>
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2017 Giorgio Gross. All rights reserved.</string>
-	<key>OSBundleLibraries</key>
-	<dict/>
+    <key>OSBundleLibraries</key>
+    <dict>
+        <key>com.apple.kpi.iokit</key>
+        <string>16.5</string>
+        <key>com.apple.kpi.libkern</key>
+        <string>16.5</string>
+    </dict>
 </dict>
 </plist>
