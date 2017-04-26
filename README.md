@@ -20,10 +20,10 @@ Personalities describe the type of devices the driver can support. For this driv
 
 Because kexts are linked at load time, a kext must list its libraries in its information property list with the OSBundleLibraries property. To add all library declarations to the info.plist file you can
 * Build the project
-* kextlib -xml MyDriver.kext
+* <code>kextlib -xml MyDriver.kext</code>
 * Copy the output to the dict of your info.plist file
 
-To make this driver run/loadable you will need to disable the System Integity Protection on your mac. To do so boot in recovery mode and execute <code>csrutil disable</code>. To reanable it again run <code>csrutil enable</code>.
+To make this driver run/loadable you will need to disable the System Integity Protection on your mac. To do so boot in recovery mode and execute <code>csrutil disable</code>. To reanable it again run <code>csrutil enable</code>. (Also useful for this topic: https://apple.stackexchange.com/questions/208478/how-do-i-disable-system-integrity-protection-sip-aka-rootless-on-os-x-10-11)
 Your driver needs the root:wheel permission set. To achieve this simply copy the driver to your tmp folder with <code>sudo cp -R MyDriver.kext /tmp</code>.
 To see information about your driver use <code>kexturil -n -t /tmp/MyDriver.kext</code>.
 To load or unload your driver use <code>kextload</code> or <code>kextunload</code>, respectively, and pass your driver as Argument. Monitoring the logs can be done by executing <code>dmesg</code>.
