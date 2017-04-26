@@ -1,3 +1,21 @@
+# IDE
+*.DS_Store
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.xcuserstate
+project.xcworkspace/
+xcuserdata/
+
+# Generated files
+*.pyc
+dist/
+build/
+
+# Backup files
+*~.nib
+
 # Compiled Object files
 *.slo
 *.lo
